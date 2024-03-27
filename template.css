@@ -21,6 +21,7 @@ nav {
   align-items: center;
   min-height: 80px;
   font-size: 20px;
+
 }
 
 nav .logo {
@@ -28,9 +29,15 @@ nav .logo {
   margin-left: 1em;
 }
 
+.logo :hover {
+  transform: scale(1.2) rotate(45deg);
+  animation-duration: 1s;
+}
+
 nav .logo a {
   text-decoration: none;
   color: #f4f4f4;
+
 }
 
 ul {
@@ -80,10 +87,43 @@ main .center-grid {
   width: 250px;
   background-color: #333;
   color: #f4f4f4;
+
+  text-decoration: none;
+  background-image: linear-gradient(red, red);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 500ms ease-in-out;
+
+
+  font-weight: var(--fw-bold);
+}
+
+.center-grid .box:hover {
+  background-size: 100% 3px;
+  color: inherit;
 }
 
 .center-grid .box-1 {
   background-color: transparent;
+}
+
+.box-3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  animation: moveBox 4s linear infinite;
+}
+
+@keyframes moveBox {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: calc(100% - 100px);
+  }
 }
 
 /* YOU MAY EDIT THE STYLES ABOVE BUT */
