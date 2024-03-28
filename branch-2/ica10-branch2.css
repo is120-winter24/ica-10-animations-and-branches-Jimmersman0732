@@ -1,1 +1,73 @@
 /* TEAMMATE TWO EDITS THESE STYLES FOR YOUR TASKS */
+
+/* Task 4 */
+aside {
+    position: absolute;
+    right: -360px;
+    bottom: 10px;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    width: 350px;
+    font-size: 32px;
+    text-align: center;
+    animation: showNotification 15s ease-in 0s infinite;
+}
+
+@keyframes showNotification {
+    0% {
+        position: -360px;
+    }
+
+    3% {
+        right: 0px;
+    }
+
+    25% {
+        right: 0px;
+    }
+
+    28% {
+        right: -360px;
+    }
+
+
+    100% {
+        right: -360px;
+    }
+}
+
+/* Task 5 */
+
+.box-5 {
+    background: linear-gradient(to right,
+        violet, indigo, blue, green, yellow, orange, red);
+}
+
+.box-5:hover {
+    animation: boxFiveHover 1s ease 0s infinite forwards;
+}
+
+@keyframes boxFiveHover {
+    0%{
+        background: linear-gradient(to left, blue, black, red);
+    }
+
+    100% {
+        background: linear-gradient(to left, blue, black, red,);
+    }
+    
+}
+
+/* Task 6 */
+
+svg {
+    animation: circleImage 5s linear 0s infinite;
+}
+
+@keyframes circleImage {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
