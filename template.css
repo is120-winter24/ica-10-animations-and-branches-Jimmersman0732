@@ -126,4 +126,22 @@ main .center-grid {
   }
 }
 
+.box-2 {
+  background-color: aqua;
+  text-decoration: none;
+  background-image: linear-gradient(red, blue);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 0% 3px;
+  transition: background-size 500ms ease-in-out;
+
+  /* extra styling   */
+  font-weight: var(--fw-bold);
+}
+
+.box-2:hover {
+  background-size: 100% 3px;
+  color: inherit;
+}
+
 /* YOU MAY EDIT THE STYLES ABOVE BUT */
