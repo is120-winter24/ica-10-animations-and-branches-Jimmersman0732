@@ -1,1 +1,10 @@
 /* TEAMMATE ONE EDITS THESE STYLES FOR YOUR TASKS */
+### 1. Animate a logo in the header of the page. Add a logo to the header of either page. Have the logo get bigger and slighty rotate when hovered over.>[ !TIP]>Remember that the `transition` property can be given multiple values to transition multiple properties at once: like `transition: width 2s,
+height 2s,
+translate(3px, 5px) 2s;
+` ### 2. Highlight a dynamic quote in a box in the grid. Insert a quote in any of the boxes,
+and create a `background-image` of a gradient that only has a `background-size` representative of an underline. The underline should grow along the bottom of the text on hover.>[ !TIP]>I *highly* recommend watching this short tutorial on this,
+as it'll take you through the steps. [Watch Here](https://youtu.be/_1vEGYWaaQY?si=BkrLWJVMbVt1qlbD)
+
+### 3. Change the position of any square in the grid continually. Have the position of any square in the CSS grid change continuously by set parameters. There are many ways to go about this (think of order, align-self, or others),
+but I would definitely recommend changing the `grid-column` or `grid-row` properties through `@keyframes`.
